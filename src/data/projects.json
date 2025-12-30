@@ -3,7 +3,7 @@
     {
       "title": "MockMyAPIs",
       "description": "A free web-based tool for developers to quickly create mock API endpoints. Supports OpenAPI specification upload and manual endpoint definition - no installation required.",
-      "tags": ["API", "Developer Tools", "OpenAPI", "SaaS"],
+      "tags": ["React", "TypeScript", "Cloudflare D1", "Serverless"],
       "category": "tools",
       "featured": true,
       "url": "https://mockmyapis.com"
@@ -11,7 +11,7 @@
     {
       "title": "QuickTools",
       "description": "A collection of 22+ free browser-based utilities for developers. Includes JSON formatter, Base64 encoder, JWT decoder, UUID generator, hash generator, and more - all running locally for 100% privacy.",
-      "tags": ["Developer Tools", "Utilities", "Privacy", "Web App"],
+      "tags": ["Astro", "Cloudflare Workers", "TypeScript", "Privacy"],
       "category": "tools",
       "featured": true,
       "url": "https://myquicktools.org"
