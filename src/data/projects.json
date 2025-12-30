@@ -5,86 +5,70 @@
       "description": "Leading initiative to minimize APK memory consumption by rewriting Java-based enforcer in Go and leveraging Envoy filters for key functionalities.",
       "tags": ["Go", "Envoy", "Kubernetes", "Performance"],
       "category": "cloud",
-      "featured": true,
-      "links": {}
+      "featured": true
     },
     {
       "title": "EnvoyGateway Integration",
       "description": "Led evaluation and implementation of EnvoyGateway within APK system. Conducted POC and successfully advocated for integration into major release.",
       "tags": ["Envoy", "Kubernetes", "API Gateway"],
       "category": "cloud",
-      "featured": true,
-      "links": {}
+      "featured": true
     },
     {
       "title": "Cilium Gateway PoC",
       "description": "Developed proof-of-concept demonstrating Cilium Gateway for both service mesh and API management functionalities.",
       "tags": ["Cilium", "eBPF", "Service Mesh", "Kubernetes"],
       "category": "cloud",
-      "featured": true,
-      "links": {}
+      "featured": true
     },
     {
       "title": "Performance Optimization - 666% Improvement",
       "description": "Improved WSO2 API Manager performance from 150 to 1000 APIs by identifying and fixing bottlenecks through load testing and code optimization.",
       "tags": ["Performance", "Java", "JMeter", "Optimization"],
       "category": "backend",
-      "featured": true,
-      "links": {
-        "github": "https://github.com/wso2/product-apim/issues/1905"
-      }
+      "featured": true
     },
     {
       "title": "AI API Rate Limiting & Analytics",
       "description": "Designed and implemented subscription-based and backend-based token rate limiting for AI APIs, along with analytics for AI API requests.",
       "tags": ["AI", "Rate Limiting", "Analytics", "API Management"],
       "category": "backend",
-      "featured": true,
-      "links": {}
+      "featured": true
     },
     {
       "title": "Salesforce Bulk API v2.0 Connector",
       "description": "Designed and implemented WSO2 connector for Salesforce Bulk API v2.0, enabling efficient batch data operations.",
       "tags": ["Salesforce", "Integration", "Java", "WSO2"],
       "category": "integration",
-      "featured": false,
-      "links": {
-        "github": "https://github.com/wso2-extensions/esb-connector-salesforcebulk"
-      }
+      "featured": false
     },
     {
       "title": "APIM Testing Automation",
       "description": "Designed Jenkins job for automating APIM profile testing in AWS EKS, eliminating manual testing in patching process.",
       "tags": ["Jenkins", "AWS EKS", "Automation", "Testing"],
       "category": "devops",
-      "featured": false,
-      "links": {}
+      "featured": false
     },
     {
       "title": "Klarna & 3DS Payment Integration",
       "description": "Implemented Klarna pay-by-link and 3DS functionality for Enactor Payments, achieving accreditation with major card networks.",
       "tags": ["Payments", "3DS", "Klarna", "Security"],
       "category": "backend",
-      "featured": true,
-      "links": {}
+      "featured": true
     },
     {
       "title": "CPAchecker IntelliJ Plugin",
       "description": "Google Summer of Code project - Developed IntelliJ IDE plugin for CPAchecker software verification tool with CI/CD pipeline.",
       "tags": ["Java", "IntelliJ", "GSoC", "Open Source"],
       "category": "tools",
-      "featured": true,
-      "links": {
-        "github": "https://github.com/nickspaargaren/cpachecker-intellij-plugin"
-      }
+      "featured": true
     },
     {
       "title": "AWS Resource Management System",
       "description": "Built internal system to track and manage Sysco LABS AWS resources, improving infrastructure visibility and cost management.",
       "tags": ["AWS", "Python", "Docker", "DevOps"],
       "category": "devops",
-      "featured": false,
-      "links": {}
+      "featured": false
     }
   ]
 }
