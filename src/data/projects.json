@@ -11,7 +11,7 @@
     {
       "title": "QuickTools",
       "description": "A collection of 22+ free browser-based utilities for developers. Includes JSON formatter, Base64 encoder, JWT decoder, UUID generator, hash generator, and more - all running locally for 100% privacy.",
-      "tags": ["Astro", "Cloudflare Workers", "TypeScript", "Privacy"],
+      "tags": ["Astro", "Cloudflare Workers", "TypeScript"],
       "category": "tools",
       "featured": true,
       "url": "https://myquicktools.org"
