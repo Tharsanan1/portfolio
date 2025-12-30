@@ -9,6 +9,14 @@
       "url": "https://mockmyapis.com"
     },
     {
+      "title": "QuickTools",
+      "description": "A collection of 22+ free browser-based utilities for developers. Includes JSON formatter, Base64 encoder, JWT decoder, UUID generator, hash generator, and more - all running locally for 100% privacy.",
+      "tags": ["Developer Tools", "Utilities", "Privacy", "Web App"],
+      "category": "tools",
+      "featured": true,
+      "url": "https://myquicktools.org"
+    },
+    {
       "title": "WSO2 APK Memory Optimization",
       "description": "Leading initiative to minimize APK memory consumption by rewriting Java-based enforcer in Go and leveraging Envoy filters for key functionalities.",
       "tags": ["Go", "Envoy", "Kubernetes", "Performance"],
