@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "title": "MockMyAPIs",
+      "description": "A free web-based tool for developers to quickly create mock API endpoints. Supports OpenAPI specification upload and manual endpoint definition - no installation required.",
+      "tags": ["API", "Developer Tools", "OpenAPI", "SaaS"],
+      "category": "tools",
+      "featured": true,
+      "url": "https://mockmyapis.com"
+    },
+    {
       "title": "WSO2 APK Memory Optimization",
       "description": "Leading initiative to minimize APK memory consumption by rewriting Java-based enforcer in Go and leveraging Envoy filters for key functionalities.",
       "tags": ["Go", "Envoy", "Kubernetes", "Performance"],
