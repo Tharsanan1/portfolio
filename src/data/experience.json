@@ -1,0 +1,76 @@
+{
+  "experiences": [
+    {
+      "company": "WSO2",
+      "role": "Associate Technical Lead",
+      "period": "Jan 2025 - Present",
+      "location": "WSO2 API Manager",
+      "current": true,
+      "highlights": [
+        "Leading development initiatives for APK and API Management products",
+        "Driving architectural decisions for cloud-native API gateway solutions",
+        "Mentoring team members and guiding technical direction"
+      ]
+    },
+    {
+      "company": "WSO2",
+      "role": "Senior Software Engineer",
+      "period": "Dec 2021 - Dec 2024",
+      "location": "WSO2 API Manager",
+      "current": false,
+      "highlights": [
+        "Led development initiative to minimize APK memory consumption by rewriting Java enforcer in Go and leveraging Envoy filters",
+        "Led evaluation and implementation of EnvoyGateway within APK system, successfully advocating integration into major release",
+        "Improved product performance by 666% (150 to 1000 APIs) through bottleneck identification and optimization",
+        "Identified and mitigated critical DoS security vulnerability in APK Enforcer code",
+        "Designed AI API rate limiting, analytics, and Kubernetes Gateway compliance features"
+      ]
+    },
+    {
+      "company": "Enactor",
+      "role": "Senior Software Engineer",
+      "period": "Sep 2021 - Dec 2021",
+      "location": "Payments Team",
+      "current": false,
+      "highlights": [
+        "Led sub-team in Enactor Payments, managing ecommerce-related tasks",
+        "Designed and implemented Klarna pay-by-link and token flow functionality",
+        "Managed DEV and Test environment deployments in AWS using Docker Swarm"
+      ]
+    },
+    {
+      "company": "Enactor",
+      "role": "Software Engineer",
+      "period": "Feb 2020 - Sep 2021",
+      "location": "Payments Team",
+      "current": false,
+      "highlights": [
+        "Designed e-commerce web payment feature with 100% test coverage using Cucumber",
+        "Implemented 3DS functionality achieving accreditation with Mastercard, Visa, and Amex",
+        "Developed automated accreditation test runner, completing in 4 weeks vs 3-month ETA"
+      ]
+    },
+    {
+      "company": "Google Summer of Code",
+      "role": "Open Source Contributor",
+      "period": "2019",
+      "location": "CPAchecker Project",
+      "current": false,
+      "highlights": [
+        "Designed and developed IntelliJ plugin for CPAchecker tool",
+        "Used GitLab CI/CD for testing code style, bugs, and deployment"
+      ]
+    },
+    {
+      "company": "Sysco LABS",
+      "role": "Software Engineering Intern",
+      "period": "Jul 2018 - Dec 2018",
+      "location": "Sri Lanka",
+      "current": false,
+      "highlights": [
+        "Designed and developed resource management system to track AWS resources",
+        "Dockerized multiple products to support ECR deployments"
+      ]
+    }
+  ]
+}

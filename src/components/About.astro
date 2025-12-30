@@ -1,0 +1,68 @@
+---
+const highlights = [
+  { value: '6+', label: 'Years Experience' },
+  { value: '666%', label: 'Performance Boost' },
+  { value: 'First Class', label: 'Honours Degree' },
+  { value: 'GSoC', label: 'Alumni' },
+];
+---
+
+<section id="about" class="py-20 bg-[var(--bg-secondary)]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 animate-on-scroll">
+      <h2 class="text-3xl sm:text-4xl font-bold text-[var(--text-primary)] mb-4">About Me</h2>
+      <div class="w-20 h-1 bg-[var(--accent)] mx-auto rounded-full"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Profile Avatar -->
+      <div class="flex justify-center animate-on-scroll">
+        <div class="relative">
+          <!-- Placeholder Avatar with Initials -->
+          <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-gradient-to-br from-[var(--accent)] to-[var(--accent-hover)] flex items-center justify-center shadow-2xl">
+            <span class="text-6xl sm:text-7xl font-bold text-white">TK</span>
+          </div>
+          <!-- Decorative ring -->
+          <div class="absolute inset-0 rounded-full border-4 border-[var(--accent)]/30 -m-4"></div>
+        </div>
+      </div>
+
+      <!-- Bio Content -->
+      <div class="animate-on-scroll">
+        <h3 class="text-2xl font-semibold text-[var(--text-primary)] mb-4">
+          Building Scalable Cloud-Native Solutions
+        </h3>
+
+        <div class="space-y-4 text-[var(--text-secondary)]">
+          <p>
+            I'm an Associate Technical Lead at WSO2, where I lead development initiatives
+            focused on API management and cloud-native technologies. My work involves
+            designing high-performance systems using Go, Java, and Kubernetes.
+          </p>
+
+          <p>
+            With a strong foundation from the University of Moratuwa (First Class Honours in
+            Computer Science), I've consistently delivered impactful solutions — from achieving
+            a 666% performance improvement to identifying critical security vulnerabilities.
+          </p>
+
+          <p>
+            I'm passionate about open source (GSoC alumni), performance optimization, and
+            building systems that scale. When I'm not coding, I enjoy exploring new
+            technologies and contributing to the developer community.
+          </p>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
+          {highlights.map(item => (
+            <div class="text-center p-4 bg-[var(--bg-primary)] rounded-lg shadow-sm">
+              <div class="text-2xl font-bold text-[var(--accent)]">{item.value}</div>
+              <div class="text-sm text-[var(--text-muted)]">{item.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

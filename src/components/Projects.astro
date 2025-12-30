@@ -1,0 +1,178 @@
+---
+import projects from '../data/projects.json';
+
+const categories = [
+  { id: 'all', label: 'All Projects' },
+  { id: 'cloud', label: 'Cloud & DevOps' },
+  { id: 'backend', label: 'Backend' },
+  { id: 'tools', label: 'Tools' },
+  { id: 'integration', label: 'Integration' },
+];
+---
+
+<section id="projects" class="py-20">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 animate-on-scroll">
+      <h2 class="text-3xl sm:text-4xl font-bold text-[var(--text-primary)] mb-4">Featured Projects</h2>
+      <div class="w-20 h-1 bg-[var(--accent)] mx-auto rounded-full"></div>
+      <p class="mt-4 text-[var(--text-secondary)] max-w-2xl mx-auto">
+        A selection of projects I've worked on, from API management to payment systems
+      </p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="flex flex-wrap justify-center gap-2 mb-10 animate-on-scroll">
+      {categories.map((cat, index) => (
+        <button
+          data-filter={cat.id}
+          class={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 filter-btn ${
+            index === 0
+              ? 'bg-[var(--accent)] text-white'
+              : 'bg-[var(--bg-secondary)] text-[var(--text-secondary)] hover:bg-[var(--accent)]/10 hover:text-[var(--accent)]'
+          }`}
+        >
+          {cat.label}
+        </button>
+      ))}
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+      {projects.projects.map((project, index) => (
+        <div
+          class="project-card group bg-[var(--bg-secondary)] rounded-xl border border-[var(--border)] overflow-hidden hover:border-[var(--accent)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--accent)]/10 hover:-translate-y-1 animate-on-scroll"
+          data-category={project.category}
+          style={`animation-delay: ${index * 50}ms`}
+        >
+          <!-- Project Header -->
+          <div class="p-6">
+            <!-- Project Icon -->
+            <div class="w-12 h-12 mb-4 rounded-lg bg-[var(--accent)]/10 flex items-center justify-center group-hover:bg-[var(--accent)] transition-colors">
+              <svg class="w-6 h-6 text-[var(--accent)] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+
+            <!-- Project Title -->
+            <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[var(--accent)] transition-colors">
+              {project.title}
+            </h3>
+
+            <!-- Project Description -->
+            <p class="text-sm text-[var(--text-secondary)] mb-4 line-clamp-3">
+              {project.description}
+            </p>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 mb-4">
+              {project.tags.slice(0, 4).map(tag => (
+                <span class="px-2 py-1 text-xs bg-[var(--bg-tertiary)] text-[var(--text-muted)] rounded">
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            <!-- Links -->
+            <div class="flex items-center gap-3 pt-4 border-t border-[var(--border)]">
+              {project.links.github && (
+                <a
+                  href={project.links.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-1 text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                  Code
+                </a>
+              )}
+              {project.links.demo && (
+                <a
+                  href={project.links.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-1 text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  Demo
+                </a>
+              )}
+              {!project.links.github && !project.links.demo && (
+                <span class="text-sm text-[var(--text-muted)]">
+                  Internal Project
+                </span>
+              )}
+            </div>
+          </div>
+
+          {/* Featured Badge */}
+          {project.featured && (
+            <div class="absolute top-4 right-4">
+              <span class="px-2 py-1 text-xs font-medium bg-[var(--accent)] text-white rounded">
+                Featured
+              </span>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Project filtering functionality
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+
+      // Update active button
+      filterButtons.forEach(btn => {
+        btn.classList.remove('bg-[var(--accent)]', 'text-white');
+        btn.classList.add('bg-[var(--bg-secondary)]', 'text-[var(--text-secondary)]');
+      });
+      button.classList.remove('bg-[var(--bg-secondary)]', 'text-[var(--text-secondary)]');
+      button.classList.add('bg-[var(--accent)]', 'text-white');
+
+      // Filter projects
+      projectCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.style.display = 'block';
+          card.style.animation = 'fadeIn 0.3s ease forwards';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .project-card {
+    position: relative;
+  }
+</style>

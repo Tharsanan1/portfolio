@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "name": "Languages",
+      "icon": "code",
+      "skills": ["Go", "Java", "Python", "JavaScript", "C++"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "icon": "cloud",
+      "skills": ["Kubernetes", "AWS", "Docker", "Helm", "Envoy", "Jenkins"]
+    },
+    {
+      "name": "Databases",
+      "icon": "database",
+      "skills": ["MySQL", "MongoDB", "PostgreSQL"]
+    },
+    {
+      "name": "Frameworks & Tools",
+      "icon": "layers",
+      "skills": ["NodeJS", "ReactJS", "Cucumber", "Git", "Linux", "JMeter"]
+    }
+  ]
+}
